@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --btn-color-1: #ffef03;
+  --text-color-1: #122a96;
+  --btn-color-2: #ec2a64;
+  --text-color-2: #ffffff;
+}
+
+header {
+  background: transparent;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10%;
+  box-shadow: 0px 0px 3px #00000040;
+}
+
+header .logo {
+  width: auto;
+  height: 80%; /* fica responsivo com a altua do header */
+  max-height: 50px;
+}
+
+header .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bg {
+  height: 46vh;
+  width: 100%;
+}
+
+.bg-1 {
+  width: 100%;  
+  background: url(./img/bg-travessia.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-2 {
+  background: url(./img/bg-fuga.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg .container-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  max-width: 1600px;
+  padding: 10px 10%;
+}
+
+.bg .container-bg .img-container {
+  height: 80%;
+}
+
+.bg .container-bg .img-container img {
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+}
+
+.bg .container-bg .data {
+  color: var(--text-color-2);
+  font-size: 30px;
+}
+
+.bg-1 .container-bg .data h1 strong {
+  color: var(--btn-color-1);
+}
+
+.bg-2 .container-bg .data h1 strong {
+  color: var(--btn-color-2);
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.bg-1 .container-bg .btn {
+  background-color: var(--btn-color-1);
+  color: var(--text-color-1);
+}
+.bg-1 .container-bg .btn a {
+  color: var(--text-color-1);
+}
+
+.bg-2 .container-bg .btn {
+  background-color: var(--btn-color-2);
+  color: var(--text-color-2);
+}
+
+.bg-2 .container-bg .btn a {
+  color: var(--text-color-2);
+}
+
+.btn {
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 47px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+header .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Background Sections */
+.bg {
+  height: 46vh;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-1 {
+  background: url(./img/bg-travessia.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-2 {
+  background: url(./img/bg-fuga.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg .container-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  max-width: 1600px;
+  padding: 20px 17%;
+  height: 100%;
+}
+
+.bg .container-bg .img-container {
+  height: 60%;
+  max-height: 200px;
+  margin-bottom: 20px;
+}
+
+.bg .container-bg .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 300px;
+}
+
+.bg .container-bg .data {
+  color: var(--text-color-2);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bg-1 .container-bg .data h1 strong {
+  color: var(--btn-color-1);
+}
+
+.bg-2 .container-bg .data h1 strong {
+  color: var(--btn-color-2);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 47px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-1 .container-bg .btn {
+  background-color: var(--btn-color-1);
+}
+
+.bg-1 .container-bg .btn a {
+  color: var(--text-color-1);
+}
+
+.bg-2 .container-bg .btn {
+  background-color: var(--btn-color-2);
+}
+
+.bg-2 .container-bg .btn a {
+  color: var(--text-color-2);
+}
+
+/* MEDIA QUERIES - RESPONSIVIDADE */
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .bg {
+    min-height: 350px;
+  }
+  
+  .bg .container-bg {
+    padding: 15px 8%;
+  }
+  
+  .bg .container-bg .img-container {
+    max-height: 180px;
+  }
+  
+  .bg .container-bg .img-container img {
+    max-width: 250px;
+  }
+  
+  .bg .container-bg .data {
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablets pequenos e celulares grandes (480px - 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    height: 10vh;
+    min-height: 70px;
+    padding: 5px 5%;
+  }
+  
+  .bg {
+    height: 45vh;
+    min-height: 300px;
+  }
+  
+  .bg .container-bg {
+    align-items: center;
+    text-align: center;
+    padding: 15px 5%;
+  }
+  
+  .bg .container-bg .img-container {
+    height: 50%;
+    max-height: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .bg .container-bg .img-container img {
+    max-width: 200px;
+  }
+  
+  .bg .container-bg .data {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    width: 180px;
+    height: 42px;
+    font-size: 15px;
+  }
+}
+
+/* Celulares (até 480px) */
+@media screen and (max-width: 480px) {
+  header {
+    height: 12vh;
+    min-height: 60px;
+  }
+  
+  header .logo {
+    max-height: 40px;
+  }
+  
+  .bg {
+    height: 44vh;
+    min-height: 280px;
+    background-size: cover;
+    background-position: 40% center;
+
+  }
+  
+  .bg .container-bg {
+    padding: 10px 5%;
+    gap:10px
+
+}
+  
+  .bg .container-bg .img-container {
+    height: 45%;
+    max-height: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .bg .container-bg .img-container img {
+    max-width: 160px;
+  }
+  
+  .bg .container-bg .data {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    width: 160px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+}
+
+/* Celulares muito pequenos (até 320px) */
+@media screen and (max-width: 320px) {
+  .bg {
+    min-height: 250px;
+  }
+  
+  .bg .container-bg .img-container img {
+    max-width: 140px;
+  }
+  
+  .bg .container-bg .data {
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    width: 140px;
+    height: 35px;
+    font-size: 12px;
+  }
+}

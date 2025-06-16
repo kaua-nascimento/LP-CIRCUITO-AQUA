@@ -151,7 +151,7 @@ header .logo img {
 .bg-2 {
   background: url(./img/bg-fuga.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 80%;
   background-size: cover;
 }
 
